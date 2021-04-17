@@ -82,7 +82,9 @@ img {
 
 @media (min-width: 900px) {
     
-    html {font-size: 20px;}
+    html {
+        font-size:2.134471718249733vh;
+    }
     main {
         width: 100vh;
         height: 45vh;
