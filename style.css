@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background: hsl(233, 47%, 7%);
+    --mainBackground: hsl(244, 38%, 16%);
+    --SoftViolet: hsl(277, 64%, 61%);
+}
+html {
+    font-family: 'Inter', sans-serif;
+}
+p, h1, h3 {color: white;}
+
+h1 {
+    font-weight: 600;
+}
+
+body {
+    background-color: var(--background);
+}
+
+main {
+    height: auto;
+    width: 18.125rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--mainBackground);
+    text-align: center;
+    border-radius: 0.6rem;
+}
+
+.read p {
+  opacity: 0.6;
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.read {
+    padding: 1.4rem;
+}
+
+span {
+    color: var(--SoftViolet);
+}
+
+.image {
+    position: relative;
+}
+.decimage {display: none;}
+img {
+    border-radius: 0.6rem  0.6rem 0 0;
+    display: block;
+}
+
+.overlay {
+    background-color:hsl(277, 100%, 31%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.5;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.links {margin-top: 1rem;}
+.link {
+    margin-bottom: 2rem;
+}
+
+.link p {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.5;
+}
+
+@media (min-width: 900px) {
+    
+    html {font-size: 20px;}
+    main {
+        width: 100vh;
+        height: 45vh;
+        display: flex;
+        text-align: left;
+    }
+    h1 {font-weight: 700;}
+    .image {
+        display: none;  
+    }
+     
+    .decimage {
+        display: block;
+        position: relative;
+    }
+
+    .decimage img {
+        border-radius:  0rem 0.6rem 0.6rem 0 ;
+        height: 45vh;
+    }
+
+    .overlaydec {
+        background-color:hsl(277, 100%, 31%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0.5;
+        border-radius: 0 0.6rem 0.6rem  0;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 2em;
+        left: -2%;
+    }
+
+    .link p {
+        font-size: .6rem;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+
+    .read p {
+        margin-top: 1.5rem;
+        font-size: .7rem;
+        line-height: 1.2rem;
+    }
+}
